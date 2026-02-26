@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHALYMAN — Juggler & Performance Artist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Scroll Progress -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <a href="#" class="nav-logo">CHALYMAN</a>
+        <div class="nav-center">
+            <span class="nav-tag">JUGGLER · PERFORMER · ARTIST</span>
+        </div>
+        <div class="nav-right">
+            <a href="#contact" class="nav-book">BOOK NOW ↗</a>
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#about" class="mobile-nav-link" data-index="01">About</a>
+        <a href="#shows" class="mobile-nav-link" data-index="02">Shows</a>
+        <a href="#reel" class="mobile-nav-link" data-index="03">Watch</a>
+        <a href="#gallery" class="mobile-nav-link" data-index="04">Gallery</a>
+        <a href="#videos" class="mobile-nav-link" data-index="05">Videos</a>
+        <a href="#contact" class="mobile-nav-link" data-index="06">Book</a>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+        <div class="hero-noise"></div>
+
+        <div class="hero-top-bar">
+            <span>20+ YRS EXPERIENCE</span>
+            <span>WORLDWIDE PERFORMER</span>
+            <span>AVAILABLE NOW</span>
+        </div>
+
+        <div class="hero-main">
+            <div class="hero-left">
+                <div class="hero-tag-row">
+                    <div class="tag-pill">JUGGLER</div>
+                    <div class="tag-pill">COMEDIAN</div>
+                    <div class="tag-pill">ENTERTAINER</div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="ht-line" data-text="CHA">CHA</span>
+                    <span class="ht-line" data-text="LY">LY</span>
+                    <span class="ht-line" data-text="MAN">MAN</span>
+                </h1>
+                <div class="hero-subtitle-row">
+                    <div class="rotating-badge" id="rotatingBadge">
+                        <svg viewBox="0 0 260 260">
+                            <defs>
+                                <path id="circle" d="M 130,130 m -110,0 a 110,110 0 1,1 220,0 a 110,110 0 1,1 -220,0"/>
+                            </defs>
+                            <text font-size="18" fill="currentColor" font-family="DM Mono, monospace" letter-spacing="9">
+                                <textPath href="#circle">MORE THAN A STAR, A CONSTELLATION.</textPath>
+                            </text>
+                        </svg>
+                        <div class="badge-star">✦</div>
+                    </div>
+                    <p class="hero-sub">Jaw-dropping juggling.<br>Contagious humor.<br>Unforgettable shows.</p>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="hero-img-frame">
+                    <div class="frame-label-top">SHOWTIME</div>
+                    <div class="frame-img-area">
+                        <img src="pictures/chalyman.jpg" alt="CHALYMAN — Juggler & Street Performer" class="performer-photo">
+                    </div>
+                    <div class="frame-label-bottom">
+                        <span>20+ YRS</span>
+                        <span class="sep">·</span>
+                        <span>500+ SHOWS</span>
+                        <span class="sep">·</span>
+                        <span>WORLDWIDE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-cta-row">
+            <a href="#contact" class="cta-btn cta-primary">BOOK THE SHOW</a>
+            <a href="#reel" class="cta-btn cta-secondary">WATCH SHOWREEL ↓</a>
+            <div class="cta-ticker">
+                <span>FESTIVALS</span>
+                <span class="dot">—</span>
+                <span>CORPORATE</span>
+                <span class="dot">—</span>
+                <span>PRIVATE EVENTS</span>
+                <span class="dot">—</span>
+                <span>ALL AGES</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee-strip">
+        <div class="marquee-inner">
+            <span>FESTIVALS</span><span class="m-sep">✦</span>
+            <span>STREET PERFORMANCE</span><span class="m-sep">✦</span>
+            <span>CORPORATE EVENTS</span><span class="m-sep">✦</span>
+            <span>PRIVATE BOOKINGS</span><span class="m-sep">✦</span>
+            <span>COMEDY JUGGLING</span><span class="m-sep">✦</span>
+            <span>AUDIENCE PARTICIPATION</span><span class="m-sep">✦</span>
+            <!-- duplicate for seamless loop -->
+            <span>FESTIVALS</span><span class="m-sep">✦</span>
+            <span>STREET PERFORMANCE</span><span class="m-sep">✦</span>
+            <span>CORPORATE EVENTS</span><span class="m-sep">✦</span>
+            <span>PRIVATE BOOKINGS</span><span class="m-sep">✦</span>
+            <span>COMEDY JUGGLING</span><span class="m-sep">✦</span>
+            <span>AUDIENCE PARTICIPATION</span><span class="m-sep">✦</span>
+        </div>
+    </div>
+
+    <!-- ===================== THE SHOW ===================== -->
+    <section class="the-show">
+        <div class="the-show-grid">
+            <div class="the-show-header-col">
+                <span class="section-num">◎</span>
+                <div class="vertical-label">THE SHOW</div>
+                <h2 class="the-show-title">STREET<br>SHOW</h2>
+            </div>
+            <div class="the-show-main">
+                <p class="the-show-lead">Step right up and prepare for an exciting, family-friendly street show where <strong>YOU</strong> become part of the action. Join Chalyman, a talented juggler from Venezuela, for a lively, interactive performance filled with high-level juggling, silly humor, and plenty of surprises.</p>
+                <div class="the-show-cols">
+                    <div>
+                        <p>From the very start, the audience plays a key role — whether it's helping with tricks, being part of the comedy moments, or just sharing in the laughter. The show kicks off with lighthearted, absurd tricks that will have everyone grinning, followed by an escalating sequence of impressive juggling routines.</p>
+                        <p>As the show progresses, the pace picks up, with the audience playing even bigger roles. You'll feel like you're part of the performance every step of the way.</p>
+                    </div>
+                    <div>
+                        <p>Through it all, Chalyman delivers a positive, uplifting message about joy, perseverance, and the power of a smile. This show is not just about impressive juggling — it's about creating a fun, interactive experience that leaves everyone with a smile and a little extra happiness.</p>
+                        <p>Whether you're a juggling fan or just looking for a good time, this high-energy, heartwarming performance is something the whole family can enjoy!</p>
+                    </div>
+                </div>
+                <div class="the-show-finale-pill">
+                    <span class="finale-fire">🔥</span>
+                    <div>
+                        <strong>Grand Finale — Fire Juggling</strong>
+                        <span>Flaming torches soaring through the air in a jaw-dropping display of skill and courage.</span>
+                    </div>
+                </div>
+                <div class="the-show-tags">
+                    <span>Family-Friendly</span>
+                    <span>Interactive</span>
+                    <span>All Ages</span>
+                    <span>Fire Juggling Finale</span>
+                    <span>Audience Participation</span>
+                    <span>Comedy</span>
+                    <span>Joy &amp; Positivity</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="about">
+        <div class="about-grid">
+            <div class="about-number-col">
+                <span class="section-num">01</span>
+                <div class="vertical-label">THE ARTIST</div>
+            </div>
+
+            <div class="about-content-col">
+                <span class="section-kicker">About Chalyman</span>
+                <h2 class="about-headline">
+                    Two decades.<br>
+                    Three languages.<br>
+                    <em>One mission.</em>
+                </h2>
+                <div class="about-body">
+                    <p>Freddy Antonio Amador Morón — known as CHALYMAN — is a versatile circus artist, juggler, and clown with over two decades of experience across Latin America and Europe.</p>
+                    <p>Renowned for his skills in juggling, clowning, and public engagement, he has participated in international circus conventions and trained with legends like Sean Gandini and Bill Berry. He won an Honorable Mention at Venezuela's first circus arts contest, directed and starred in the circus-theater production <em>"Involución"</em>, and toured Central America for 18 months with Circo Roca Hermanos.</p>
+                    <p>Multilingual in Spanish, English, and German — Freddy has also volunteered at pediatric hospitals, bringing joy through clowning to those who need it most. His performances carry that same warmth to every stage.</p>
+                </div>
+                <div class="about-pull">
+                    "He made 2,000<br>strangers feel like<br>old friends."
+                    <span class="pull-source">— SunFest Programming Director</span>
+                </div>
+            </div>
+
+            <div class="about-stats-col">
+                <div class="stat-block">
+                    <div class="stat-num" data-count="20">0</div>
+                    <div class="stat-desc">Years on stage</div>
+                </div>
+                <div class="stat-block featured-stat">
+                    <div class="stat-num" data-count="500">0</div>
+                    <div class="stat-desc">Shows worldwide</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-num" data-count="7">0</div>
+                    <div class="stat-desc">Objects mastered</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-num" data-count="12">0</div>
+                    <div class="stat-desc">Countries performed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SHOWREEL ===================== -->
+    <section id="reel" class="reel">
+        <div class="reel-header">
+            <span class="section-num">02</span>
+            <h2 class="reel-title">WATCH<br>THE ACT</h2>
+            <div class="reel-kicker">In action. Unrehearsed reactions. Real crowds.</div>
+        </div>
+        <div class="reel-stage">
+            <div class="video-embed-wrapper">
+                <iframe src="https://www.youtube.com/embed/K460W30NF6w?rel=0&modestbranding=1"
+                        title="CHALYMAN — Promo Video"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SHOWS ===================== -->
+    <section id="shows" class="shows">
+        <div class="shows-header-row">
+            <span class="section-num">03</span>
+            <h2 class="shows-title">AVAILABLE<br>FOR BOOKING</h2>
+        </div>
+
+        <div class="shows-list">
+            <div class="show-row" data-show="festivals">
+                <div class="show-row-num">01</div>
+                <div class="show-row-main">
+                    <h3 class="show-row-title">Festivals</h3>
+                    <p class="show-row-desc">High-energy, crowd-commanding performances for main stages and intimate tent shows alike. CHALYMAN reads the room and scales the energy to match.</p>
+                </div>
+                <div class="show-row-details">
+                    <span>30–45 min sets</span>
+                    <span>Audience participation</span>
+                    <span>Sound system included</span>
+                </div>
+                <a href="#contact" class="show-row-link">
+                    <span>BOOK</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+            </div>
+
+            <div class="show-row" data-show="corporate">
+                <div class="show-row-num">02</div>
+                <div class="show-row-main">
+                    <h3 class="show-row-title">Corporate</h3>
+                    <p class="show-row-desc">The world's best icebreaker. Turns a room of strangers into a laughing, engaged unit. Perfect for galas, conferences, and product launches.</p>
+                </div>
+                <div class="show-row-details">
+                    <span>Customisable content</span>
+                    <span>Brand integration</span>
+                    <span>Networking energiser</span>
+                </div>
+                <a href="#contact" class="show-row-link">
+                    <span>BOOK</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+            </div>
+
+            <div class="show-row" data-show="private">
+                <div class="show-row-num">03</div>
+                <div class="show-row-main">
+                    <h3 class="show-row-title">Private Events</h3>
+                    <p class="show-row-desc">Birthdays, weddings, garden parties, anniversaries. Intimate or large — every private show gets a personalised touch that makes your occasion legendary.</p>
+                </div>
+                <div class="show-row-details">
+                    <span>Personalised performance</span>
+                    <span>Flexible duration</span>
+                    <span>All ages welcome</span>
+                </div>
+                <a href="#contact" class="show-row-link">
+                    <span>BOOK</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials">
+        <div class="testimonials-header-row">
+            <span class="section-num">04</span>
+            <h2 class="test-title">WHAT THEY<br>SAID</h2>
+        </div>
+
+        <div class="testimonials-tape">
+            <div class="test-card">
+                <div class="test-rating">★★★★★</div>
+                <blockquote class="test-quote">"Booked CHALYMAN for three consecutive years at SunFest. Every single time he delivers something different. The crowd absolutely loses it."</blockquote>
+                <div class="test-attribution">
+                    <strong>Sarah K.</strong>
+                    <span>Programming Director — SunFest</span>
+                </div>
+            </div>
+            <div class="test-card test-card--accent">
+                <div class="test-rating">★★★★★</div>
+                <blockquote class="test-quote">"Two hundred corporate executives laughing like children. That's what CHALYMAN does. Our gala has never been the same since."</blockquote>
+                <div class="test-attribution">
+                    <strong>Marco D.</strong>
+                    <span>Head of Events — Meridian Group</span>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="test-rating">★★★★★</div>
+                <blockquote class="test-quote">"I booked him for a birthday and honestly, the adults were more entertained than the kids. Genuine world-class talent."</blockquote>
+                <div class="test-attribution">
+                    <strong>Yael R.</strong>
+                    <span>Private Client</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="marquee-strip marquee-strip--dark marquee-strip--slow">
+            <div class="marquee-inner">
+                <span>LAUGHTER</span><span class="m-sep">✦</span>
+                <span>WONDER</span><span class="m-sep">✦</span>
+                <span>GASPS</span><span class="m-sep">✦</span>
+                <span>APPLAUSE</span><span class="m-sep">✦</span>
+                <span>MEMORIES</span><span class="m-sep">✦</span>
+                <span>LAUGHTER</span><span class="m-sep">✦</span>
+                <span>WONDER</span><span class="m-sep">✦</span>
+                <span>GASPS</span><span class="m-sep">✦</span>
+                <span>APPLAUSE</span><span class="m-sep">✦</span>
+                <span>MEMORIES</span><span class="m-sep">✦</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section class="gallery-section" id="gallery">
+        <div class="gallery-section-header">
+            <span class="section-num">06</span>
+            <h2 class="gallery-section-title">IN THE<br>FIELD</h2>
+            <span class="gallery-drag-hint">← DRAG TO EXPLORE →</span>
+        </div>
+        <div class="gallery-reel" id="galleryReel">
+            <div class="gallery-item"><img src="pictures/chalymansplit.JPG" alt="Chalyman on stage" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/DAMI6978.jpg" alt="Chalyman performing" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/chaly4.jpg" alt="Chalyman juggling" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/chalykaris.jpg" alt="Chalyman" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/chalyman.jpeg" alt="Chalyman performing" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/IMG-20190714-WA0007.jpg" alt="Chalyman street show" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/IMG-20190714-WA0066.jpg" alt="Chalyman performance" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/IMG-20190714-WA0072.jpg" alt="Chalyman juggling" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/IMG-20190714-WA0073.jpg" alt="Chalyman street act" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/inbound103406923503245589.jpg" alt="Chalyman" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/maliulicni.jpg" alt="Chalyman abroad" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/maliulicni2.jpg" alt="Chalyman performance" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/maliulicni4.jpg" alt="Chalyman show" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/maliulicni5.jpg" alt="Chalyman performing" loading="lazy"></div>
+            <div class="gallery-item"><img src="pictures/1715604825354.jpg" alt="Chalyman" loading="lazy"></div>
+        </div>
+    </section>
+
+    <!-- ===================== MORE VIDEOS ===================== -->
+    <section class="more-videos" id="videos">
+        <div class="more-videos-header">
+            <span class="section-num">07</span>
+            <h2 class="more-videos-title">MORE<br>VIDEOS</h2>
+        </div>
+        <div class="more-videos-grid">
+            <div class="mv-card mv-card--featured">
+                <div class="mv-embed">
+                    <iframe src="https://www.youtube.com/embed/K460W30NF6w?rel=0&modestbranding=1"
+                        title="CHALYMAN — Promo Video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="mv-card-label">Promo Reel — 2026</div>
+            </div>
+            <div class="mv-card">
+                <div class="mv-embed">
+                    <iframe src="https://www.youtube.com/embed/yOP1J4ShuJk?rel=0&modestbranding=1"
+                        title="The Grand Entrance — Ball Finale" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="mv-card-label">The Grand Entrance — Ball Finale</div>
+            </div>
+            <div class="mv-card">
+                <div class="mv-embed">
+                    <iframe src="https://www.youtube.com/embed/wY7zT9M_q-w?rel=0&modestbranding=1"
+                        title="Lata y Media — Full Act" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="mv-card-label">Lata y Media — Full Act</div>
+            </div>
+            <div class="mv-card">
+                <div class="mv-embed">
+                    <iframe src="https://www.youtube.com/embed/qIphLg5Kjac?rel=0&modestbranding=1"
+                        title="Zagreb Street Mix" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="mv-card-label">Zagreb Street Mix</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="contact">
+        <div class="contact-split">
+            <div class="contact-left">
+                <span class="section-num">05</span>
+                <h2 class="contact-title">LET'S<br>MAKE IT<br>HAPPEN.</h2>
+                <div class="contact-info-block">
+                    <div class="info-row">
+                        <span class="info-label">RESPONSE</span>
+                        <span class="info-val">Within 24 hours</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">TRAVEL</span>
+                        <span class="info-val">Worldwide</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">AVAILABILITY</span>
+                        <span class="info-val">Check calendar →</span>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a href="https://instagram.com" target="_blank" class="social-pill">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+                        </svg>
+                        Instagram
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-pill">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 8a2 2 0 012-2h16a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8z"/>
+                            <path d="M10 12l5-3v6l-5-3z" fill="currentColor"/>
+                        </svg>
+                        YouTube
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" class="social-pill">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12a4 4 0 1 0 4 4V4c.667 1.333 2 3 5 3"/>
+                        </svg>
+                        TikTok
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <form class="booking-form" id="bookingForm" novalidate>
+                    <div class="form-row form-row--2">
+                        <div class="field">
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                            <label for="name">NAME</label>
+                        </div>
+                        <div class="field">
+                            <input type="email" id="email" name="email" required placeholder="Email address">
+                            <label for="email">EMAIL</label>
+                        </div>
+                    </div>
+                    <div class="form-row form-row--2">
+                        <div class="field">
+                            <select id="eventType" name="eventType" required>
+                                <option value="" disabled selected>Event type</option>
+                                <option value="festival">Festival</option>
+                                <option value="corporate">Corporate</option>
+                                <option value="private">Private Event</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="eventType">EVENT TYPE</label>
+                        </div>
+                        <div class="field">
+                            <input type="date" id="date" name="date">
+                            <label for="date">DATE (OPTIONAL)</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field">
+                            <textarea id="message" name="message" rows="4" required placeholder="Tell me about your event…"></textarea>
+                            <label for="message">MESSAGE</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-submit-btn">
+                        SEND ENQUIRY
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                </form>
+                <div class="form-success" id="formSuccess">
+                    <div class="success-mark">✦</div>
+                    <h3>Got it — talk soon.</h3>
+                    <p>I'll reply within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">CHALYMAN</div>
+            <div class="footer-mid">
+                <span>WHERE LAUGHTER MEETS GRAVITY</span>
+            </div>
+            <div class="footer-copy">© 2026</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
