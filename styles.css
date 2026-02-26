@@ -1290,7 +1290,8 @@ a { color: inherit; text-decoration: none; }
 
     .hero-main { grid-template-columns: 1fr; }
     .hero-left { border-right: none; border-bottom: var(--border); }
-    .hero-right { display: none; } /* hide on mobile, let the title carry it */
+    .hero-right { display: block; }
+    .frame-img-area { height: 65vw; max-height: 340px; }
 
     .hero-cta-row { flex-direction: column; align-items: stretch; }
     .cta-btn { border-right: none; border-bottom: var(--border); text-align: center; }
