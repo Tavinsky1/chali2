@@ -1290,8 +1290,8 @@ a { color: inherit; text-decoration: none; }
 
     .hero-main { grid-template-columns: 1fr; }
     .hero-left { border-right: none; border-bottom: var(--border); }
-    .hero-right { display: block; }
-    .frame-img-area { height: 65vw; max-height: 340px; }
+    .hero-right { display: block; width: 100%; }
+    .hero-img-frame { height: 72vw; max-height: 360px; }
 
     .hero-cta-row { flex-direction: column; align-items: stretch; }
     .cta-btn { border-right: none; border-bottom: var(--border); text-align: center; }
