@@ -1494,3 +1494,99 @@ a { color: inherit; text-decoration: none; }
     .more-videos-grid { grid-template-columns: 1fr; }
     .mv-card--placeholder { aspect-ratio: 16/5; }
 }
+
+/* ====================================================
+   TOUCH DEVICES — restore native cursor
+   ==================================================== */
+@media (hover: none), (pointer: coarse) {
+    body { cursor: auto; }
+    .cursor { display: none !important; }
+    a, button, [role="button"] { cursor: pointer; }
+    .show-row, .reel-video { cursor: auto; }
+}
+
+/* ====================================================
+   MOBILE REFINEMENTS (≤768px)
+   ==================================================== */
+@media (max-width: 768px) {
+    /* ── NAV ── */
+    .nav { padding: 1rem 1.25rem; }
+    .nav-qr { display: none; }
+
+    /* ── HERO ── */
+    .hero-top-bar { flex-wrap: wrap; gap: .5rem .75rem; padding: .75rem 1.25rem; }
+    .hero-left { padding: 1.75rem 1.25rem; gap: 1.25rem; }
+    .hero-title { font-size: clamp(4.5rem, 24vw, 6rem); }
+    .hero-subtitle-row { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+    .rotating-badge { width: 130px; height: 130px; min-width: 130px; }
+    .cta-btn { font-size: 1rem; padding: 1.25rem 1.5rem; }
+
+    /* ── ABOUT ── */
+    .about-content-col { padding: 2rem 1.25rem 2.5rem; }
+    .about-stats-col { grid-template-columns: repeat(2, 1fr) !important; grid-template-rows: auto !important; }
+    .stat-block { padding: 1.5rem 1.25rem; }
+    .stat-num { font-size: 2.5rem; }
+    .about-pull { padding: 1.25rem; font-size: 1.25rem; }
+
+    /* ── SHOWS ── */
+    .shows-header-row { padding: 1.75rem 1.25rem 1.25rem; }
+    .show-row { padding: 1.5rem 1.25rem; gap: .75rem; }
+    .show-row-title { font-size: 1.4rem; }
+    .show-row-link { min-height: 48px; padding: .875rem 1.25rem; }
+
+    /* ── REEL ── */
+    .reel-header { padding: 2rem 1.25rem; }
+    .reel-stage { padding: 0 1.25rem 2rem; }
+    .reel-play-icon { width: 64px; height: 64px; }
+    .reel-play-icon svg { width: 26px; height: 26px; }
+
+    /* ── THE SHOW ── */
+    .the-show-header-col { padding: 1.5rem 1.25rem !important; }
+    .the-show-main { padding: 2rem 1.25rem 2.5rem; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-header-row { padding: 2rem 1.25rem; }
+    .test-card { padding: 2rem 1.25rem; }
+
+    /* ── CONTACT ── */
+    .contact-split { min-height: auto; }
+    .contact-left { padding: 2.5rem 1.25rem; gap: 2rem; }
+    .contact-right { padding: 2.5rem 1.25rem; }
+    .social-pill { width: 100%; min-height: 52px; justify-content: flex-start; }
+
+    /* ── FOOTER ── */
+    .footer-inner { padding: 2rem 1.25rem; gap: .75rem; }
+
+    /* ── GALLERY + VIDEOS ── */
+    .gallery-section-header { padding: 0 1.25rem 1.5rem; }
+    .more-videos-header { margin-bottom: 2rem; gap: 1rem; }
+    .more-videos { padding: 2.5rem 1.25rem; }
+}
+
+/* ====================================================
+   SMALL PHONES (≤480px)
+   ==================================================== */
+@media (max-width: 480px) {
+    .hero-title { font-size: clamp(3.75rem, 26vw, 5rem); }
+    .tag-pill { font-size: .65rem; padding: .35rem .75rem; }
+    .rotating-badge { display: none; }
+
+    .about-headline { font-size: clamp(2rem, 10vw, 3rem); }
+    .about-stats-col { grid-template-columns: repeat(2, 1fr) !important; }
+    .stat-num { font-size: 2.25rem; }
+
+    .shows-title, .reel-title, .test-title, .contact-title,
+    .gallery-section-title, .more-videos-title { font-size: clamp(2.5rem, 13vw, 3.5rem); }
+
+    .info-row { flex-direction: column; align-items: flex-start; gap: .35rem; }
+    .info-val { font-size: .85rem; }
+
+    .gallery-item { width: 85vw; }
+    .gallery-reel { padding: 1rem 1.25rem; }
+    .gallery-section-header { padding: 0 1.25rem 1.25rem; }
+
+    .footer-logo { font-size: 1.4rem; }
+    .footer-inner { padding: 1.75rem 1.25rem; }
+
+    .mobile-nav-link { font-size: clamp(2.25rem, 10vw, 3rem); }
+}
