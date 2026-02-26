@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip CHALYMAN — PayPal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --black: #0e0e0e;
+            --cream: #f5f0e4;
+            --yellow: #FFDB00;
+            --orange: #FF4D00;
+            --border: 2px solid #0e0e0e;
+        }
+
+        body {
+            background: var(--cream);
+            color: var(--black);
+            font-family: 'DM Sans', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .back {
+            position: fixed;
+            top: 1.5rem;
+            left: 1.5rem;
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            padding: .5rem 1rem;
+            border: var(--border);
+            background: transparent;
+            text-decoration: none;
+            color: var(--black);
+            transition: background .2s, color .2s;
+        }
+        .back:hover { background: var(--black); color: var(--cream); }
+
+        .card {
+            border: var(--border);
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .card-header {
+            background: var(--black);
+            color: var(--yellow);
+            padding: 1.25rem 2rem;
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .25em;
+            text-transform: uppercase;
+        }
+
+        .card-body {
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .title {
+            font-family: 'Anton', sans-serif;
+            font-size: clamp(2.5rem, 10vw, 4rem);
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            letter-spacing: .1em;
+            color: #555;
+            text-transform: uppercase;
+        }
+
+        .qr-wrap {
+            border: var(--border);
+            padding: 1rem;
+            background: #fff;
+            display: inline-block;
+        }
+
+        .qr-wrap img {
+            width: 220px;
+            height: 220px;
+            display: block;
+            object-fit: contain;
+        }
+
+        .hint {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .08em;
+            color: #666;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .divider {
+            width: 100%;
+            border: none;
+            border-top: var(--border);
+        }
+
+        .tagline {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            opacity: .4;
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back">← Back</a>
+
+    <div class="card">
+        <div class="card-header">Support the artist · PayPal</div>
+        <div class="card-body">
+            <div>
+                <p class="title">TIP<br>CHALYMAN</p>
+            </div>
+            <p class="subtitle">Scan with your phone camera</p>
+            <div class="qr-wrap">
+                <img src="pictures/qrcode.png" alt="PayPal QR Code for CHALYMAN">
+            </div>
+            <p class="hint">
+                Open your camera app, point at the QR code,<br>
+                and tap the link to send a tip via PayPal.<br>
+                Every contribution keeps the show going. ✦
+            </p>
+            <hr class="divider">
+            <p class="tagline">More than a star, a constellation.</p>
+        </div>
+    </div>
+
+</body>
+</html>

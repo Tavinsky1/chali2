@@ -127,6 +127,19 @@ a { color: inherit; text-decoration: none; }
 }
 .nav-book:hover { background: var(--black); color: var(--yellow); transform: translate(-2px,-2px); }
 
+.nav-qr {
+    font-family: var(--font-mono);
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: .6rem 1.25rem;
+    border: var(--border);
+    background: transparent;
+    transition: background .2s, transform .15s;
+}
+.nav-qr:hover { background: var(--black); color: var(--cream); transform: translate(-2px,-2px); }
+
 .burger {
     display: none;
     flex-direction: column;
